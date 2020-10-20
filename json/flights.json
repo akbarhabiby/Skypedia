@@ -1,0 +1,223 @@
+[
+    {
+        "flightNumber": "NH 872",
+        "AirlineId": 1
+    },
+    {
+        "flightNumber": "NH 845",
+        "AirlineId": 1
+    },
+    {
+        "flightNumber": "NH 801",
+        "AirlineId": 1
+    },
+    {
+        "flightNumber": "NH 843",
+        "AirlineId": 1
+    },
+    {
+        "flightNumber": "NH 846",
+        "AirlineId": 1
+    },
+    {
+        "flightNumber": "NH 855",
+        "AirlineId": 1
+    },
+    {
+        "flightNumber": "NH 870",
+        "AirlineId": 1
+    },
+    {
+        "flightNumber": "KE 601",
+        "AirlineId": 2
+    },
+    {
+        "flightNumber": "KE 086",
+        "AirlineId": 2
+    },
+    {
+        "flightNumber": "KE 081",
+        "AirlineId": 2
+    },
+    {
+        "flightNumber": "KE 701",
+        "AirlineId": 2
+    },
+    {
+        "flightNumber": "KE 705",
+        "AirlineId": 2
+    },
+    {
+        "flightNumber": "KE 036",
+        "AirlineId": 2
+    },
+    {
+        "flightNumber": "GA 560",
+        "AirlineId": 3
+    },
+    {
+        "flightNumber": "GA 840",
+        "AirlineId": 3
+    },
+    {
+        "flightNumber": "GA 834",
+        "AirlineId": 3
+    },
+    {
+        "flightNumber": "GA 822",
+        "AirlineId": 3
+    },
+    {
+        "flightNumber": "GA 828",
+        "AirlineId": 3
+    },
+    {
+        "flightNumber": "GA 830",
+        "AirlineId": 3
+    },
+    {
+        "flightNumber": "QR 3352",
+        "AirlineId": 4
+    },
+    {
+        "flightNumber": "QR 8",
+        "AirlineId": 4
+    },
+    {
+        "flightNumber": "QR 2",
+        "AirlineId": 4
+    },
+    {
+        "flightNumber": "QR 12",
+        "AirlineId": 4
+    },
+    {
+        "flightNumber": "QR 6",
+        "AirlineId": 4
+    },
+    {
+        "flightNumber": "QR 16",
+        "AirlineId": 4
+    },
+    {
+        "flightNumber": "SQ 890",
+        "AirlineId": 5
+    },
+    {
+        "flightNumber": "SQ 860",
+        "AirlineId": 5
+    },
+    {
+        "flightNumber": "SQ 2",
+        "AirlineId": 5
+    },
+    {
+        "flightNumber": "SQ 872",
+        "AirlineId": 5
+    },
+    {
+        "flightNumber": "SQ 866",
+        "AirlineId": 5
+    },
+    {
+        "flightNumber": "SQ 868",
+        "AirlineId": 5
+    },
+    {
+        "flightNumber": "CX 0474",
+        "AirlineId": 6
+    },
+    {
+        "flightNumber": "CX 531",
+        "AirlineId": 6
+    },
+    {
+        "flightNumber": "CX 689",
+        "AirlineId": 6
+    },
+    {
+        "flightNumber": "CX 1",
+        "AirlineId": 6
+    },
+    {
+        "flightNumber": "CX 781",
+        "AirlineId": 6
+    },
+    {
+        "flightNumber": "CX 710",
+        "AirlineId": 6
+    },
+    {
+        "flightNumber": "EK 448",
+        "AirlineId": 7
+    },
+    {
+        "flightNumber": "EK 836",
+        "AirlineId": 7
+    },
+    {
+        "flightNumber": "EK 745",
+        "AirlineId": 7
+    },
+    {
+        "flightNumber": "EK 485",
+        "AirlineId": 7
+    },
+    {
+        "flightNumber": "EK 578",
+        "AirlineId": 7
+    },
+    {
+        "flightNumber": "EK 665",
+        "AirlineId": 7
+    },
+    {
+        "flightNumber": "AK 271",
+        "AirlineId": 8
+    },
+    {
+        "flightNumber": "AK 255",
+        "AirlineId": 8
+    },
+    {
+        "flightNumber": "AK 746",
+        "AirlineId": 8
+    },
+    {
+        "flightNumber": "AK 345",
+        "AirlineId": 8
+    },
+    {
+        "flightNumber": "AK 658",
+        "AirlineId": 8
+    },
+    {
+        "flightNumber": "AK 556",
+        "AirlineId": 8
+    },
+    {
+        "flightNumber": "MH 0782",
+        "AirlineId": 9
+    },
+    {
+        "flightNumber": "MH 0445",
+        "AirlineId": 9
+    },
+    {
+        "flightNumber": "MH 0487",
+        "AirlineId": 9
+    },
+    {
+        "flightNumber": "MH 1256",
+        "AirlineId": 9
+    },
+    {
+        "flightNumber": "MH 2210",
+        "AirlineId": 9
+    },
+    {
+        "flightNumber": "MH 0215",
+        "AirlineId": 9
+    }
+    
+]

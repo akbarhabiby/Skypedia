@@ -1,0 +1,38 @@
+[
+    {
+        "airlineName": "All Nippon Airways",
+        "website": "https://www.ana.co.jp"
+    },
+    {
+        "airlineName": "Korean Air",
+        "website": "https://www.koreanair.com"
+    },
+    {
+        "airlineName": "Garuda Indonesia",
+        "website": "https://www.garuda-indonesia.com"
+    },
+    {
+        "airlineName": "Qatar Airways",
+        "website": "https://www.qatarairways.com"
+    },
+    {
+        "airlineName": "Singapore Airlines",
+        "website": "http://www.singaporeair.com"
+    },
+    {
+        "airlineName": "Cathay Pacific Airways",
+        "website": "https://www.cathaypacific.com"
+    },
+    {
+        "airlineName": "Emirates",
+        "website": "http://www.emirates.com"
+    },
+    {
+        "airlineName": "AirAsia",
+        "website": "https://www.airasia.com"
+    },
+    {
+        "airlineName": "Malaysia Airlines",
+        "website": "https://www.malaysiaairlines.com"
+    }
+]

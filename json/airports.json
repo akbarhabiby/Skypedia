@@ -1,0 +1,57 @@
+[
+    {
+        "airportName": "Haneda International Airport",
+        "airportCode": "HND",
+        "location": "Tokyo, Japan"
+    },
+    {
+        "airportName": "Narita International Airport",
+        "airportCode": "NRT",
+        "location": "Chiba, Japan"
+    },
+    {
+        "airportName": "Soekarno–Hatta International Airport",
+        "airportCode": "CGK",
+        "location": "Jakarta, Indonesia"
+    },
+    {
+        "airportName": "Incheon International Airport",
+        "airportCode": "ICN",
+        "location": "Incheon, South Korea"
+    },
+    {
+        "airportName": "Singapore Changi Airport",
+        "airportCode": "SIN",
+        "location": "Singapore, Singapore"
+    },
+    {
+        "airportName": "Hong Kong International Airport",
+        "airportCode": "HKG",
+        "location": "Chek Lap Kok, Hong Kong"
+    },
+    {
+        "airportName": "Osaka International Airport",
+        "airportCode": "KIX",
+        "location": "Osaka, Japan"
+    },
+    {
+        "airportName": "Ninoy Aquino International Airport",
+        "airportCode": "MNL",
+        "location": "Manila, Philippines"
+    },
+    {
+        "airportName": "Kuala Lumpur International Airport",
+        "airportCode": "KUL",
+        "location": "Selangor, Malaysia"
+    },
+    {
+        "airportName": "Dubai International Airport",
+        "airportCode": "DXB",
+        "location": "Dubai, United Arab Emirates"
+    },
+    {
+        "airportName": "Hamad International Airport",
+        "airportCode": "DOH",
+        "location": "Doha, Qatar"
+    }
+]
