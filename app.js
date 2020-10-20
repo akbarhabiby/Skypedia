@@ -9,6 +9,8 @@ const appRouter = require('./routes')
 // * Set view engine to ejs
 app.set('view engine', 'ejs')
 
+app.use(express.static( "assets" ) )
+
 // * Middleware
 app.use(express.urlencoded( { extended: false } ))
 
