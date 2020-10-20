@@ -5,7 +5,8 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Flight extends Model {
     static associate(models) {
-      // define association here
+      Flight.belongsTo(models.Airline)
+      Flight.belongsToMany(models.Passenger, { through: models.PassengerFlight })
     }
   };
   Flight.init({

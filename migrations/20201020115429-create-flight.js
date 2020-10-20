@@ -12,7 +12,10 @@ module.exports = {
         type: Sequelize.STRING
       },
       AirlineId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Airlines'
+        }
       },
       createdAt: {
         allowNull: false,

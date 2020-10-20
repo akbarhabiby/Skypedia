@@ -5,7 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class PassengerFlight extends Model {
     static associate(models) {
-      // define association here
+      // throught this Model
     }
   };
   PassengerFlight.init({
