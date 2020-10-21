@@ -3,6 +3,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+// * Initialize session (Middleware)
+const session = require('express-session')
+
 // * Require Router
 const appRouter = require('./routes')
 
@@ -11,8 +14,15 @@ app.set('view engine', 'ejs')
 
 app.use(express.static( "assets" ) )
 
-// * Middleware
+// * Middleware ( Body Parser )
 app.use(express.urlencoded( { extended: false } ))
+
+// * Middleware ( Session )
+app.use(session({
+    secret: 'is your password save?',
+    resave: false,
+    saveUninitialized: true
+}))
 
 // * Set Router
 app.use('/', appRouter)

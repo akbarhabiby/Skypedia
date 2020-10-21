@@ -41,15 +41,23 @@
       <h1 style="color: white;">Welcome to Skypedia</h1>
       <h2 style="color: white;">Mau jalan jalan kemana?</h2>
 
-      <form action="forms/notify.php" method="post" role="form" class="php-email-form">
+      <form action="/search" method="post" role="form" class="php-email-form">
         <div class="row no-gutters">
           <div class="col-md-6 form-group pr-md-1">
-            <input type="text" name="name" class="form-control" id="name" placeholder="From" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-            <!-- <div class="validate"></div> -->
+            <select name="from" class="form-control">
+              <option value="">Kota Asal</option>
+              <% data.forEach( airport => { %>
+                <option value="<%= airport.airportCode %>"><%= airport.location %></option>
+              <% }) %> 
+            </select>
           </div>
           <div class="col-md-6 form-group pl-md-1">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Destination" data-rule="email" data-msg="Please enter a valid email" />
-            <!-- <div class="validate"></div> -->
+            <select name="destination" class="form-control">
+              <option value="">Kota Tujuan</option>
+              <% data.forEach( airport => { %>
+                <option value="<%= airport.airportCode %>"><%= airport.location %></option>
+              <% }) %> 
+            </select>
           </div>
         </div>
 
@@ -186,7 +194,6 @@
   <script src="/vendor/jquery/jquery.min.js"></script>
   <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="/js/main.js"></script>

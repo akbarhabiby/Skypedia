@@ -2,7 +2,13 @@ const { Airline, Airport, Flight } = require('../models')
 
 class Controller {
     static getHome(req, res) {
-        res.render('index')
+        Airport.findAll()
+            .then( data => {
+                res.render('index', { data })
+            })
+            .catch( err => {
+                res.send(err)
+            })
     }
 
     static getAllAirlines(req, res) {
