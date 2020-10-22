@@ -1,8 +1,8 @@
 // ! Requirement Pair Project:
-// TODO 1. CRUD    (CREATE, READ, UPDATE, DELETE)
+// * 1. CRUD    (CREATE, READ, UPDATE, DELETE)
 // * 2. Association Many to many ( Done )
-// TODO 3. Class (Static METHOD DI MODEL) & Instance Method
-// TODO 4. Helper
+// * 3. Class (Static METHOD DI MODEL) & Instance Method
+// * 4. Helper
 // * 5. Hooks ( Done )
 // * 6. Middleware ( Done )
 // * 7. SESSION / tentang login loginan ( Done )

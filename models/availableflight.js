@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
   class AvailableFlight extends Model {
     static associate(models) {
       AvailableFlight.hasMany(models.Flight)
-      AvailableFlight.belongsTo(models.Airport)
+      // AvailableFlight.belongsTo(models.Airport)
     }
 
     static penerbangan(from, to) {

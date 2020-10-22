@@ -1,5 +1,6 @@
 const { User, UserFlight, Flight, Airline, AvailableFlight, Airport } = require('../models')
 const Helper = require('../helpers/helper')
+const sendMail = require('../sendMail')
 
 class UserController {
     static getLengkapiProfil(req, res) {
@@ -63,11 +64,12 @@ class UserController {
 
     static getUserHistory(req, res) {
         const userId = req.session.user.id
-        // User.findByPk(userId, { include: [{ model: Flight, include: [ Airline, AvailableFlight ] }] })
-        User.findByPk(userId, { include: [{ model: Flight, include: [ Airline, { model: AvailableFlight, include: [ Airport ]} ] }] }) // => ON PROGRESS, RELASI BELUM ADA
+        const status = req.query.status
+        // User.findByPk(userId, { include: [{ model: Flight, include: [ Airline, { model: AvailableFlight, include: [ Airport ]} ] }] }) // => ON PROGRESS, RELASI BELUM ADA
+        User.findByPk(userId, { include: [{ model: Flight, include: [ Airline, AvailableFlight ] }] })
             .then( data => {
                 // res.send(data)
-                res.render('user/history', { data, convertDate: Helper.convertISOdate, penerbangan: AvailableFlight.penerbangan })
+                res.render('user/history', { data, status, convertDate: Helper.convertISOdate, penerbangan: AvailableFlight.penerbangan })
             })
             .catch( err => {
                 res.send(err)
@@ -78,15 +80,38 @@ class UserController {
     static getBuyFlight(req, res) {
         const flightId = req.params.flight
         const userId = req.session.user.id
+        const bookingId = Helper.randomBookingId()
         const newUserFlight = {
             UserId: userId,
             FlightId: flightId,
-            bookingId: Helper.randomBookingId()
+            bookingId: bookingId
         }
 
-        UserFlight.create(newUserFlight)
+        // Do send mail
+        let fullname
+        let email
+        let flightNumber
+        let travel
+        let airline
+        let dateflight
+        User.findByPk(userId)
             .then( data => {
-                res.send(data)
+                fullname = data.fullName(data.first_name, data.last_name)
+                email = req.session.user.email
+                return Flight.findByPk(flightId, { include: [ Airline, AvailableFlight ] })
+            })
+            .then( flightData => {
+                flightNumber = flightData.flightNumber
+                travel = `${flightData.AvailableFlight.FromIATA} ke ${flightData.AvailableFlight.ToIATA}`
+                airline = flightData.Airline.airlineName
+                dateflight = Helper.convertISOdate(flightData.dateflight)
+                sendMail(fullname, email, flightNumber, travel, airline, dateflight)
+
+                // Return
+                return UserFlight.create(newUserFlight)
+            })
+            .then( () => {
+                res.redirect(`/user/history?status=Berhasil membeli tiket pesawat, silahkan cek kotak inbox / spam email ${email}`)
             })
             .catch( err => {
                 res.send(err)
