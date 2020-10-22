@@ -1,14 +1,20 @@
-const { Airline, Airport, Flight } = require('../models')
+const { Airline, Airport, Flight, AvailableFlight } = require('../models')
 
 class Controller {
     static getHome(req, res) {
-        Airport.findAll()
-            .then( data => {
-                res.render('index', { data })
-            })
-            .catch( err => {
-                res.send(err)
-            })
+        const firstname = req.session.user.first_name
+        const check = req.query.msg
+        if (!firstname) {
+            res.redirect('/user/lengkapi')
+        } else {
+            Airport.findAll()
+                .then( data => {
+                    res.render('index', { data, firstname, check })
+                })
+                .catch( err => {
+                    res.send(err)
+                })
+        }
     }
 
     static getAllAirlines(req, res) {
@@ -45,6 +51,7 @@ class Controller {
                 res.send(err)
             })
     }
+    
 }
 
 module.exports = Controller

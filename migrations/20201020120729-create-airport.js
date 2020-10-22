@@ -12,7 +12,8 @@ module.exports = {
         type: Sequelize.STRING
       },
       airportCode: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        unique: true
       },
       location: {
         type: Sequelize.STRING

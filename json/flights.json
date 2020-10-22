@@ -1,31 +1,59 @@
 [
     {
         "flightNumber": "NH 872",
-        "AirlineId": 1
+        "AirlineId": 1,
+        "AvailableFlightId": 1,
+        "dateflight": "2020-10-23",
+        "timeflight": "18:00",
+        "price": 12500000
     },
     {
         "flightNumber": "NH 845",
-        "AirlineId": 1
+        "AirlineId": 1,
+        "AvailableFlightId": 1,
+        "dateflight": "2020-10-23",
+        "timeflight": "05:00",
+        "price": 7500000
     },
     {
         "flightNumber": "NH 801",
-        "AirlineId": 1
+        "AirlineId": 1,
+        "AvailableFlightId": 1,
+        "dateflight": "2020-10-23",
+        "timeflight": "08:00",
+        "price": 6000000
     },
     {
         "flightNumber": "NH 843",
-        "AirlineId": 1
+        "AirlineId": 1,
+        "AvailableFlightId": 1,
+        "dateflight": "2020-10-23",
+        "timeflight": "15:00",
+        "price": 6750000
     },
     {
         "flightNumber": "NH 846",
-        "AirlineId": 1
+        "AirlineId": 1,
+        "AvailableFlightId": 2,
+        "dateflight": "2020-10-23",
+        "timeflight": "03:00",
+        "price": 8560000
     },
     {
         "flightNumber": "NH 855",
-        "AirlineId": 1
+        "AirlineId": 1,
+        "AvailableFlightId": 2,
+        "dateflight": "2020-10-23",
+        "timeflight": "17:45",
+        "price": 9000000
     },
     {
         "flightNumber": "NH 870",
-        "AirlineId": 1
+        "AirlineId": 1,
+        "AvailableFlightId": 1,
+        "dateflight": "2020-10-23",
+        "timeflight": "19:50",
+        "price": 7504000
     },
     {
         "flightNumber": "KE 601",
@@ -76,148 +104,48 @@
         "AirlineId": 3
     },
     {
-        "flightNumber": "QR 3352",
-        "AirlineId": 4
-    },
-    {
-        "flightNumber": "QR 8",
-        "AirlineId": 4
-    },
-    {
-        "flightNumber": "QR 2",
-        "AirlineId": 4
-    },
-    {
-        "flightNumber": "QR 12",
-        "AirlineId": 4
-    },
-    {
-        "flightNumber": "QR 6",
-        "AirlineId": 4
-    },
-    {
-        "flightNumber": "QR 16",
-        "AirlineId": 4
-    },
-    {
-        "flightNumber": "SQ 890",
-        "AirlineId": 5
-    },
-    {
         "flightNumber": "SQ 860",
-        "AirlineId": 5
+        "AirlineId": 4
     },
     {
         "flightNumber": "SQ 2",
-        "AirlineId": 5
+        "AirlineId": 4
     },
     {
         "flightNumber": "SQ 872",
-        "AirlineId": 5
+        "AirlineId": 4
     },
     {
         "flightNumber": "SQ 866",
-        "AirlineId": 5
+        "AirlineId": 4
     },
     {
         "flightNumber": "SQ 868",
-        "AirlineId": 5
-    },
-    {
-        "flightNumber": "CX 0474",
-        "AirlineId": 6
-    },
-    {
-        "flightNumber": "CX 531",
-        "AirlineId": 6
-    },
-    {
-        "flightNumber": "CX 689",
-        "AirlineId": 6
-    },
-    {
-        "flightNumber": "CX 1",
-        "AirlineId": 6
-    },
-    {
-        "flightNumber": "CX 781",
-        "AirlineId": 6
-    },
-    {
-        "flightNumber": "CX 710",
-        "AirlineId": 6
-    },
-    {
-        "flightNumber": "EK 448",
-        "AirlineId": 7
-    },
-    {
-        "flightNumber": "EK 836",
-        "AirlineId": 7
-    },
-    {
-        "flightNumber": "EK 745",
-        "AirlineId": 7
-    },
-    {
-        "flightNumber": "EK 485",
-        "AirlineId": 7
-    },
-    {
-        "flightNumber": "EK 578",
-        "AirlineId": 7
-    },
-    {
-        "flightNumber": "EK 665",
-        "AirlineId": 7
+        "AirlineId": 4
     },
     {
         "flightNumber": "AK 271",
-        "AirlineId": 8
+        "AirlineId": 5
     },
     {
         "flightNumber": "AK 255",
-        "AirlineId": 8
+        "AirlineId": 5
     },
     {
         "flightNumber": "AK 746",
-        "AirlineId": 8
+        "AirlineId": 5
     },
     {
         "flightNumber": "AK 345",
-        "AirlineId": 8
+        "AirlineId": 5
     },
     {
         "flightNumber": "AK 658",
-        "AirlineId": 8
+        "AirlineId": 5
     },
     {
         "flightNumber": "AK 556",
-        "AirlineId": 8
-    },
-    {
-        "flightNumber": "MH 0782",
-        "AirlineId": 9
-    },
-    {
-        "flightNumber": "MH 0445",
-        "AirlineId": 9
-    },
-    {
-        "flightNumber": "MH 0487",
-        "AirlineId": 9
-    },
-    {
-        "flightNumber": "MH 1256",
-        "AirlineId": 9
-    },
-    {
-        "flightNumber": "MH 2210",
-        "AirlineId": 9
-    },
-    {
-        "flightNumber": "MH 0215",
-        "AirlineId": 9
+        "AirlineId": 5
     }
     
 ]

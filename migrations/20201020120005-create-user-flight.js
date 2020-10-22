@@ -1,32 +1,26 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('PassengerFlights', {
+    return queryInterface.createTable('UserFlights', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      PassengerId: {
-        type: Sequelize.INTEGER
+      UserId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Users'
+        }
       },
       FlightId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Flights'
+        }
       },
       bookingId: {
-        type: Sequelize.STRING
-      },
-      from: {
-        type: Sequelize.STRING
-      },
-      to: {
-        type: Sequelize.STRING
-      },
-      dateFlight: {
-        type: Sequelize.DATE
-      },
-      timeFlight: {
         type: Sequelize.STRING
       },
       createdAt: {
@@ -40,6 +34,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('PassengerFlights');
+    return queryInterface.dropTable('UserFlights');
   }
 };

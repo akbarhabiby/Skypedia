@@ -13,9 +13,18 @@ module.exports = {
       },
       AirlineId: {
         type: Sequelize.INTEGER,
-        references: {
-          model: 'Airlines'
-        }
+      },
+      AvailableFlightId: {
+        type: Sequelize.INTEGER
+      },
+      dateflight: {
+        type: Sequelize.DATE
+      },
+      timeflight: {
+        type: Sequelize.STRING
+      },
+      price: {
+        type: Sequelize.INTEGER
       },
       createdAt: {
         allowNull: false,
