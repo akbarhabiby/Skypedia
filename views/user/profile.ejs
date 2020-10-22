@@ -47,6 +47,7 @@
 				<ul class="right hide-on-med-and-down">
 					<li><a href="/user/history">History Perjalanan Kamu</a></li>
 					<li><a href="/user">Profil Kamu</a></li>
+					<li><a href="/logout">Logout</a></li>
 				</ul>
 				<a href="javascript: void(0);" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 			</div>
@@ -54,8 +55,27 @@
 	</div>
 
 <main class="container">
-	<h1>Edit Profil</h1>
-	<h4>History Kamu</h4>
+	<h4>Profil Kamu</h4>
+
+		<div class="section">
+			<form action="/user" method="POST">
+				<div>
+					<label>Nama Depan</label>
+					<input type="text" name="first_name" placeholder="e.g: Shin" value="<%= data.first_name %>" disabled>
+				</div>
+				<div>
+					<label>Nama Belakang</label>
+					<input type="text" name="last_name" placeholder="e.g: Yuna" value="<%= data.last_name %>" disabled>
+				</div>
+				<div>
+					<label>Email</label>
+					<input type="text" name="email" placeholder="e.g: shinyuna@itzy.co.kr" value="<%= data.email %>" disabled>
+				</div>
+			</form>
+			<div style="margin-top: 2rem;">
+				<a href="/user/edit" class="waves-effect waves-light btn green" style>Edit Profil</a>
+			</div>
+		</div>
 </main>
 
 <!-- ======= Footer ======= -->

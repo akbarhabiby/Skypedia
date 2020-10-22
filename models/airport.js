@@ -5,7 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Airport extends Model {
     static associate(models) {
-      // define association here
+      Airport.hasMany(models.AvailableFlight)
     }
   };
   Airport.init({

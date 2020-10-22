@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const Controller = require('../controllers/app-controller')
-const { auth } = require('../middlewares/auth')
+const { authHome } = require('../middlewares/auth')
 
 // ! Router ( Don't Change )
 const loginRouter = require('./superman')
@@ -11,7 +11,7 @@ const searchRouter = require('./searchRouter')
 const userRouter = require('./userRouter')
 
 
-router.get('/', auth, Controller.getHome)
+router.get('/', authHome, Controller.getHome)
 
 router.use('/login', loginRouter)
 
@@ -24,5 +24,15 @@ router.use('/register', registerRouter)
 router.use('/airlines', airlinesRouter)
 
 router.use('/airports', airportsRouter)
+
+router.get('/logout', (req, res) => {
+    req.session.destroy( err => {
+        if (err) {
+            res.send(err)
+        } else {
+            res.redirect('/')
+        }
+    })
+})
 
 module.exports = router

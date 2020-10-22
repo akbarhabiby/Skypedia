@@ -16,4 +16,12 @@ const authLogin = (req, res, next) => {
     }
 }
 
-module.exports = { auth, authLogin }
+const authHome = (req, res, next) => {
+    if (!req.session.isloggedIn) {
+        res.render('public')
+    } else {
+        next()
+    }
+}
+
+module.exports = { auth, authLogin, authHome }
