@@ -1,0 +1,50 @@
+[
+    {
+        "FromIATA": "HND",
+        "ToIATA": "CGK"
+    },
+    {
+        "FromIATA": "HND",
+        "ToIATA": "ICN"
+    },
+    {
+        "FromIATA": "HND",
+        "ToIATA": "SIN"
+    },
+    {
+        "FromIATA": "CGK",
+        "ToIATA": "HND"
+    },
+    {
+        "FromIATA": "CGK",
+        "ToIATA": "ICN"
+    },
+    {
+        "FromIATA": "CGK",
+        "ToIATA": "SIN"
+    },
+    {
+        "FromIATA": "ICN",
+        "ToIATA": "HND"
+    },
+    {
+        "FromIATA": "ICN",
+        "ToIATA": "CGK"
+    },
+    {
+        "FromIATA": "ICN",
+        "ToIATA": "SIN"
+    },
+    {
+        "FromIATA": "SIN",
+        "ToIATA": "HND"
+    },
+    {
+        "FromIATA": "SIN",
+        "ToIATA": "CGK"
+    },
+    {
+        "FromIATA": "SIN",
+        "ToIATA": "ICN"
+    }
+]

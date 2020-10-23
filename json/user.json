@@ -1,0 +1,44 @@
+[
+    {
+        "firstName": "Junichi",
+        "lastName": "Koken",
+        "email": "junichikoken@mail.com",
+        "phoneNumber": "+8179-806-9114"
+    },
+    {
+        "firstName": "Miyuki",
+        "lastName": "Otashiro",
+        "email": "miyukiotashiro@mail.com",
+        "phoneNumber": "+8175-522-4724"
+    },
+    {
+        "firstName": "Kasih Vera",
+        "lastName": "Susanto",
+        "email": "kasihveras@mail.com",
+        "phoneNumber": "+62-823180-1034"
+    },
+    {
+        "firstName": "Wulan Glenna",
+        "lastName": "Hermanto",
+        "email": "wulanglennah@mail.com",
+        "phoneNumber": "+62-81138-0151"
+    },
+    {
+        "firstName": "Jun-young",
+        "lastName": "Wi",
+        "email": "junyoungwi@mail.com",
+        "phoneNumber": "+82-1-168-1178"
+    },
+    {
+        "firstName": "Shin",
+        "lastName": "Yuna",
+        "email": "shinyuna@itzy.com",
+        "phoneNumber": "+82-09-12-2003"
+    },
+    {
+        "firstName": "Shin",
+        "lastName": "Ryujin",
+        "email": "shinryujin@itzy.com",
+        "phoneNumber": "+82-17-04-2001"
+    }
+]

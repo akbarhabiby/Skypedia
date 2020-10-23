@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "db",
+    "database": "skypedia",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "ldgdwfsrdwkyiz",
+    "password": "0e113b52fd70fcf7c87fe8280594566c81d527ba1e164c12e6c7158567b7e67c",
+    "database": "ddblp65eglkqqq",
+    "host": "ec2-54-157-234-29.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  }
+}

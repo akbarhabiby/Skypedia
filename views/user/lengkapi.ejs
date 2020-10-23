@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/img/logo.png">
+
+    <title>Lengkapi data diri</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body class="bg-light">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h2>Yuk Lengkapi Profil kamu</h2>
+        <p class="lead">Karena kamu baru pertama kali mendaftar<br>Kamu harus melengkapi profil kamu sebelum bisa memesan tiket.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 order-md-1">
+          <h4 class="mb-3">Nama Depan</h4>
+          <form action="/user/lengkapi" method="POST">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="first_name">First name</label>
+                <input type="text" class="form-control" id="first_name" name="first_name" placeholder="" value="">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="last_name">Last name <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="" value="">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com" value="<%= user.email %>" disabled>
+            </div>
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Lengkapi</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2020 Skypedia</p>
+        <p class="text-muted">Template from Boostrap</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

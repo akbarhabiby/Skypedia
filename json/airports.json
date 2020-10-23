@@ -1,0 +1,22 @@
+[
+    {
+        "airportName": "Haneda International Airport",
+        "airportCode": "HND",
+        "location": "Tokyo, Japan"
+    },
+    {
+        "airportName": "Soekarno–Hatta International Airport",
+        "airportCode": "CGK",
+        "location": "Jakarta, Indonesia"
+    },
+    {
+        "airportName": "Incheon International Airport",
+        "airportCode": "ICN",
+        "location": "Incheon, South Korea"
+    },
+    {
+        "airportName": "Singapore Changi Airport",
+        "airportCode": "SIN",
+        "location": "Singapore, Singapore"
+    }
+]

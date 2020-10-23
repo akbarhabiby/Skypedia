@@ -1,0 +1,22 @@
+[
+    {
+        "airlineName": "All Nippon Airways",
+        "website": "https://www.ana.co.jp"
+    },
+    {
+        "airlineName": "Korean Air",
+        "website": "https://www.koreanair.com"
+    },
+    {
+        "airlineName": "Garuda Indonesia",
+        "website": "https://www.garuda-indonesia.com"
+    },
+    {
+        "airlineName": "Singapore Airlines",
+        "website": "http://www.singaporeair.com"
+    },
+    {
+        "airlineName": "AirAsia",
+        "website": "https://www.airasia.com"
+    }
+]
